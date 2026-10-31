@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="从原理、能力、使用方法与局限四个维度，清晰理解人工智能。"
+    />
+    <meta name="theme-color" content="#111310" />
+    <title>理解 AI | 人工智能认知指南</title>
+    <link rel="preload" href="assets/ai-hero.jpg" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark" aria-hidden="true">AI</span>
+        <span class="brand-name">认知地图</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        菜单
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="主要导航">
+        <a href="#definition">AI 是什么</a>
+        <a href="#capabilities">AI 能做什么</a>
+        <a href="#practice">如何使用</a>
+        <a href="#limits">局限与进步</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="切换到浅色模式">
+        <span data-theme-label>浅色</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">AI 认知指南</p>
+          <h1>理解 AI，<br />从原理到判断。</h1>
+          <p class="hero-lede">一份清晰、诚实、可操作的人工智能入门指南。</p>
+          <a class="primary-action" href="#definition">
+            开始了解
+            <span aria-hidden="true">↘</span>
+          </a>
+        </div>
+
+        <figure class="hero-visual reveal" data-delay="1">
+          <img
+            src="assets/ai-hero.jpg"
+            width="1536"
+            height="1024"
+            alt="由玻璃层、金属结构与绿色信号线构成的抽象人工智能装置"
+          />
+        </figure>
+      </section>
+
+      <aside class="premise" aria-label="核心观点">
+        <p>AI 不是会思考的人</p>
+        <p>它是从大量数据中学习规律，并根据输入预测合适输出的系统。</p>
+      </aside>
+
+      <section class="section definition" id="definition" aria-labelledby="definition-title">
+        <div class="section-heading reveal">
+          <h2 id="definition-title">AI 是什么</h2>
+          <p>它不是魔法，而是一套从数据中寻找规律、再用规律完成任务的方法。</p>
+        </div>
+
+        <div class="definition-layout">
+          <div class="definition-statement reveal">
+            <p class="large-statement">
+              人工智能的核心，是让机器表现出原本需要人类智能才能完成的能力。
+            </p>
+            <p>
+              今天常见的 AI 多数通过机器学习实现。它会从大量示例中调整内部参数，却不一定像人一样理解世界。
+            </p>
+          </div>
+
+          <div class="learning-model reveal" data-delay="1" aria-label="AI 的基本工作流程">
+            <div class="model-step">
+              <span class="step-key">输入</span>
+              <strong>数据与指令</strong>
+              <p>文字、图片、声音、数字或传感器信息。</p>
+            </div>
+            <div class="model-connector" aria-hidden="true"><span></span></div>
+            <div class="model-step model-step-accent">
+              <span class="step-key">学习</span>
+              <strong>寻找规律</strong>
+              <p>比较大量样本，建立复杂的关联。</p>
+            </div>
+            <div class="model-connector" aria-hidden="true"><span></span></div>
+            <div class="model-step">
+              <span class="step-key">输出</span>
+              <strong>预测结果</strong>
+              <p>给出回答、分类、建议或新内容。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section capabilities" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="section-heading reveal">
+          <h2 id="capabilities-title">AI 能干什么</h2>
+          <p>AI 擅长处理模式明确、数据充足的任务。人负责方向，它负责加速。</p>
+        </div>
+
+        <div class="capability-grid">
+          <article class="capability-card capability-card-lead reveal">
+            <div>
+              <span class="capability-index">语言</span>
+              <h3>理解与生成内容</h3>
+            </div>
+            <p>总结长文、翻译语言、整理想法、撰写初稿，也能根据上下文进行连续对话。</p>
+            <div class="word-field" aria-hidden="true">
+              <span>提问</span><span>比较</span><span>归纳</span><span>改写</span><span>解释</span>
+            </div>
+          </article>
+
+          <figure class="capability-photo reveal" data-delay="1">
+            <img
+              src="assets/ai-collaboration.jpg"
+              width="1456"
+              height="1086"
+              loading="lazy"
+              alt="人手在深色工作台上整理透明图纸与模型，代表人与 AI 的协作"
+            />
+          </figure>
+
+          <article class="capability-card reveal">
+            <span class="capability-index">视觉</span>
+            <h3>识别与创作图像</h3>
+            <p>识别物体与场景，辅助设计、修图，并把文字描述转化为视觉草案。</p>
+          </article>
+
+          <article class="capability-card capability-card-dark reveal" data-delay="1">
+            <span class="capability-index">分析</span>
+            <h3>从数据中找线索</h3>
+            <p>处理大量信息，发现异常、趋势与关联，为判断提供更快的参考。</p>
+            <div class="signal-lines" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+          </article>
+
+          <article class="capability-card capability-card-wide reveal">
+            <span class="capability-index">行动</span>
+            <h3>自动完成重复任务</h3>
+            <p>分类文件、提取信息、编写代码、规划步骤。复杂任务仍需要人类检查与确认。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section practice" id="practice" aria-labelledby="practice-title">
+        <div class="section-heading reveal">
+          <h2 id="practice-title">如何使用 AI</h2>
+          <p>好结果通常来自清楚的任务、必要的背景、明确的标准，以及最后的人类核验。</p>
+        </div>
+
+        <div class="practice-layout">
+          <ol class="method-list reveal">
+            <li>
+              <span>说清任务</span>
+              <p>告诉 AI 你要解决什么问题，而不只是丢给它一个主题。</p>
+            </li>
+            <li>
+              <span>补充背景</span>
+              <p>说明对象、用途、限制与已有材料，减少无关猜测。</p>
+            </li>
+            <li>
+              <span>规定输出</span>
+              <p>指定长度、语气、结构或评价标准，让答案更接近需求。</p>
+            </li>
+            <li>
+              <span>检查迭代</span>
+              <p>核对事实，指出问题，再让 AI 针对性修改。</p>
+            </li>
+          </ol>
+
+          <div class="prompt-lab reveal" data-delay="1">
+            <div class="lab-heading">
+              <div>
+                <span>提示词练习器</span>
+                <h3>把模糊想法变清楚</h3>
+              </div>
+              <button class="lab-reset" type="button">重置</button>
+            </div>
+
+            <form id="prompt-form" novalidate>
+              <label>
+                <span>你想完成什么</span>
+                <input id="task-input" name="task" type="text" placeholder="例如：解释光合作用" />
+                <small>先用一个具体动作描述任务。</small>
+              </label>
+              <label>
+                <span>给谁使用</span>
+                <input id="audience-input" name="audience" type="text" placeholder="例如：小学五年级学生" />
+                <small>对象决定用词、深度与语气。</small>
+              </label>
+              <label>
+                <span>希望怎样呈现</span>
+                <input id="format-input" name="format" type="text" placeholder="例如：用三个生活例子，300 字以内" />
+                <small>写出结构、长度或必须满足的条件。</small>
+              </label>
+              <p class="form-error" role="alert" hidden>请至少填写“你想完成什么”。</p>
+              <button class="generate-button" type="submit">生成提示词</button>
+            </form>
+
+            <div class="prompt-output" aria-live="polite">
+              <span>生成结果</span>
+              <p id="prompt-result">填写左侧信息，这里会组合出一条更清楚的提示词。</p>
+              <button class="copy-button" type="button" disabled>复制</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section limits" id="limits" aria-labelledby="limits-title">
+        <div class="section-heading reveal">
+          <h2 id="limits-title">AI 的缺点与进步空间</h2>
+          <p>能力越强，越需要知道它在哪里可能出错，以及人必须承担什么责任。</p>
+        </div>
+
+        <figure class="limits-image reveal">
+          <img
+            src="assets/ai-limits.jpg"
+            width="1536"
+            height="1024"
+            loading="lazy"
+            alt="逐渐失去对齐并出现缺口的玻璃方格装置，象征 AI 的不确定性"
+          />
+        </figure>
+
+        <div class="limits-list">
+          <article class="limit-item reveal">
+            <h3>会自信地答错</h3>
+            <p>生成式 AI 追求合理的下一段内容，不等于它在验证事实。</p>
+          </article>
+          <article class="limit-item reveal" data-delay="1">
+            <h3>可能放大偏见</h3>
+            <p>训练数据包含现实世界的不公平，模型也可能重复这些倾向。</p>
+          </article>
+          <article class="limit-item reveal">
+            <h3>缺少真实经验</h3>
+            <p>它能模拟理解，却没有身体、情感与亲身经历带来的判断。</p>
+          </article>
+          <article class="limit-item reveal" data-delay="1">
+            <h3>责任仍属于人</h3>
+            <p>医疗、法律、教育等重要决定，不能只交给模型完成。</p>
+          </article>
+        </div>
+
+        <div class="progress-note reveal">
+          <p>下一步不是让 AI 更像人，而是让它更可靠、更透明、更可控。</p>
+          <div class="progress-topics" aria-label="AI 的进步方向">
+            <span>减少错误</span>
+            <span>解释依据</span>
+            <span>保护隐私</span>
+            <span>对齐人类价值</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>理解工具，才能更好地使用工具。</p>
+      <a href="#top">回到顶部 ↑</a>
+    </footer>
+  </body>
+</html>
